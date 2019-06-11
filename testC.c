@@ -26,7 +26,16 @@ int  getrandom_(int *v1) {
   
    for ( i = 0; i < 5; ++i) {
       v1[i] = rand();
-      printf( "r[%d] = %d\n", i, v1[i]);
+      //printf( "r[%d] = %d\n", i, v1[i]);
    }
    return (1);
+}
+
+int sumarr_(int *v1, int *v2, int *v3) {
+    for(int i =0; i < 5; i++) {
+        v3[i] = v1[i] + v2[i];
+        printf( "i = %d v1 = %d v2 = %d v3 = %d \n", i, v1[i], v2[i], v3[i]);
+    }
+
+    return(1);
 }
